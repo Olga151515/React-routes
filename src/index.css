@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .top-menu .active {
+        @apply text-secondary rounded-md;
+    }
+    
+    .top-menu a {
+        @apply flex gap-2 items-center active:text-info hover:text-info
+        focus:outline-none transition duration-500 py-2 px-3
+    }
+}
